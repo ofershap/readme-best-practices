@@ -2,12 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-AI agents write READMEs that read like API docs. Feature bullets, generic headers, walls of text nobody
-reads. Your README is a landing page. You have 5 seconds before someone closes the tab.
+Your README is a landing page. You have 5 seconds before someone closes the tab. This plugin teaches
+your AI agent to write READMEs that hook the reader and make them install.
 
-> AI coding assistants (Cursor, Claude Code, Copilot, Codex) default to dry, template-style READMEs
-> with "The Problem" headers, bold-label bullets, and marketing filler like "seamless" and "robust."
-> This plugin teaches them to write READMEs that make people actually install.
+> Every coding assistant defaults to dry, template-style documentation. This plugin changes that.
+> Bold punchlines up front, scannable feature tables, copy-paste Quick Start blocks, visual author
+> cards. The structure that top open source projects use, applied automatically.
 
 ## Install
 
@@ -21,31 +21,41 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
 
 ## What's Included
 
-| Type    | Name                    | Description                                                               |
-| ------- | ----------------------- | ------------------------------------------------------------------------- |
-| Skill   | `readme-best-practices` | Full guide: BLUF headers, story sections, feature tables, author cards    |
-| Rule    | `best-practices`        | Always-on rule that enforces good README patterns on every edit           |
-| Command | `/audit`                | Scan your project's README for anti-patterns and missed best practices    |
+| Type    | Name                    | Description                                                                |
+| ------- | ----------------------- | -------------------------------------------------------------------------- |
+| Skill   | `readme-best-practices` | Full guide: BLUF headers, story sections, feature tables, author cards     |
+| Rule    | `readme-best-practices` | Always-on rule that enforces great README patterns on every edit           |
+| Command | `/create-readme`        | Create or rewrite the project README following the full best practices     |
 
-## What Agents Get Wrong
+## The Transformation
 
-AI agents consistently produce these README anti-patterns:
+| Before                                 | After                                                     |
+| -------------------------------------- | --------------------------------------------------------- |
+| Generic "A tool that..." opening       | BLUF punchline: bold value prop in the first 3 lines      |
+| Section called "The Problem"           | A name with personality: "Your Agent Works in a Void"     |
+| `**Feature:** description` bullets     | Feature tables, scannable at a glance                     |
+| Plain "Made by username"               | Visual author card with avatar and stats ([GitShow](https://gitshow.dev)) |
+| Quick Start with `$` prefix            | Copy-paste ready bash blocks                              |
+| All paragraphs the same length         | Varied structure: one-liners, short paragraphs, tables    |
+| Missing demo GIF link                  | Assets verified on disk before referencing                |
 
-| What the agent writes                     | What works better                                        |
-| ----------------------------------------- | -------------------------------------------------------- |
-| Section called "The Problem"              | A section name with personality: "Your Agent Works in a Void" |
-| `**Feature:** description` bullet lists   | Feature tables that are scannable at a glance            |
-| Generic "A tool that..." opening          | BLUF punchline: bold value prop in the first 3 lines     |
-| Plain "Made by username" author line      | Visual author card with avatar and stats                 |
-| "seamless", "robust", "comprehensive"     | Concrete descriptions of what actually happens           |
-| All paragraphs same length                | Varied structure: one-liners, short paragraphs, tables   |
-| Quick Start with `$` prefix               | Copy-paste ready bash blocks                             |
-| References to `assets/demo.gif` that doesn't exist | Check disk first, skip if missing              |
+## How It Works
+
+The plugin embeds a complete README structure into your agent's behavior:
+
+1. **BLUF header** - bold punchline first, context second. The reader decides in 3 seconds
+2. **Navigation buttons** - for-the-badge style, linking to key sections
+3. **Story section** - named with personality, not "Introduction" or "Overview"
+4. **Feature tables** - scannable, two-column format instead of bullet lists
+5. **Copy-paste Quick Start** - zero to running in under 30 seconds
+6. **Author card** - [GitShow](https://gitshow.dev) renders a live card image from any GitHub username
+
+The always-on rule enforces these patterns on every README edit, so nothing slips through.
 
 ## Related Plugins
 
-- [ai-humanizer](https://github.com/ofershap/ai-humanizer) - Make all AI-generated content undetectable,
-  not just READMEs
+- [ai-humanizer](https://github.com/ofershap/ai-humanizer) - Prevent AI-detectable patterns in all
+  generated content, not just READMEs
 - [typescript-best-practices](https://github.com/ofershap/typescript-best-practices) - Modern TypeScript
   patterns for code quality
 
