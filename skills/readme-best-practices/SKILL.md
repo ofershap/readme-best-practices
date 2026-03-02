@@ -1,18 +1,24 @@
 ---
 name: readme-best-practices
-description: Write READMEs that make people install. Use when creating, rewriting, or auditing a README for any open source project.
+description:
+  Write READMEs that make people install. Use when creating, rewriting, or auditing a README for any
+  open source project.
 ---
 
 # README Best Practices
 
-A README is a landing page. You have 5 seconds before someone closes the tab. Every line competes for attention. Write like you're selling, not documenting.
+A README is a landing page. You have 5 seconds before someone closes the tab. Every line competes
+for attention. Write like you're selling, not documenting.
 
 ## Before Writing
 
 1. **Understand the project** - read the source, understand what it does, who it's for
-2. **Find the angle** - what problem does this solve? What's the current alternative? Why is the current alternative bad?
-3. **Check for assets** - look for demo GIFs, screenshots, logos in `assets/`. Only reference files that exist on disk
-4. **Study the repo** - look at existing READMEs in the workspace for established patterns and conventions
+2. **Find the angle** - what problem does this solve? What's the current alternative? Why is the
+   current alternative bad?
+3. **Check for assets** - look for demo GIFs, screenshots, logos in `assets/`. Only reference files
+   that exist on disk
+4. **Study the repo** - look at existing READMEs in the workspace for established patterns and
+   conventions
 
 ## Structure
 
@@ -35,11 +41,12 @@ A README is a landing page. You have 5 seconds before someone closes the tab. Ev
 </p>
 ```
 
-**BLUF - Bottom Line Up Front.** Lead with the punchline, not the setup. Bold it. The reader decides in 3 seconds whether to keep reading.
+**BLUF - Bottom Line Up Front.** Lead with the punchline, not the setup. Bold it. The reader decides
+in 3 seconds whether to keep reading.
 
-Good: "Multiple developers. One AI agent. Same conversation."
-Good: "Your AI agent writes your code. The least you can do is give it an office."
-Bad: "In today's collaborative development world, teams need better tools for..."
+Good: "Multiple developers. One AI agent. Same conversation." Good: "Your AI agent writes your code.
+The least you can do is give it an office." Bad: "In today's collaborative development world, teams
+need better tools for..."
 
 ### 2. Navigation Buttons
 
@@ -53,7 +60,8 @@ Bad: "In today's collaborative development world, teams need better tools for...
 </p>
 ```
 
-3-4 buttons max. Grey `for-the-badge` style. Link to anchors. Use a colored button only for external links (live demo, hosted version).
+3-4 buttons max. Grey `for-the-badge` style. Link to anchors. Use a colored button only for external
+links (live demo, hosted version).
 
 ### 3. Status Badges
 
@@ -68,6 +76,7 @@ Bad: "In today's collaborative development world, teams need better tools for...
 Only badges that are true. No npm badge if not published. No Docker badge without a Dockerfile.
 
 Badge URL reference:
+
 - CI: `https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg`
 - npm version: `https://img.shields.io/npm/v/PACKAGE.svg`
 - npm downloads: `https://img.shields.io/npm/dm/PACKAGE.svg`
@@ -87,12 +96,14 @@ If no demo GIF exists, skip entirely. Never reference missing assets.
 
 ### 5. The Story
 
-This is the most important section. NOT called "The Problem" or "Introduction" or "Overview" or "About." Give it a name with personality.
+This is the most important section. NOT called "The Problem" or "Introduction" or "Overview" or
+"About." Give it a name with personality.
 
-Good: "Your Agent Works in a Void", "AI Spend Is a Blind Spot", "Two Developers, One Agent"
-Bad: "The Problem", "Introduction", "Overview", "Motivation"
+Good: "Your Agent Works in a Void", "AI Spend Is a Blind Spot", "Two Developers, One Agent" Bad:
+"The Problem", "Introduction", "Overview", "Motivation"
 
 Content:
+
 - Start with the reader's current situation. Make them feel it
 - List the bad alternatives they use now (2-3 max)
 - What this project does differently, in 1-2 paragraphs
@@ -104,29 +115,25 @@ Never start with "In today's..." or "Have you ever..." or generic scene-setting.
 
 Copy-paste ready. 3-5 bash lines. The reader goes from zero to running in 30 seconds.
 
-```markdown
+````markdown
 ## Quick Start
 
-\```bash
-git clone https://github.com/user/repo.git
-cd repo
-npm install
-npm run dev
-\```
+\```bash git clone https://github.com/user/repo.git cd repo npm install npm run dev \```
 
 Open `http://localhost:3000`. Done.
-```
+````
 
 ### 7. Features
 
-Use tables for features. Tables are scannable. Bold-label bullet lists are the most AI-detectable README pattern.
+Use tables for features. Tables are scannable. Bold-label bullet lists are the most AI-detectable
+README pattern.
 
 ```markdown
-| | |
-|---|---|
-| **Live streaming** | Responses stream to all participants simultaneously |
-| **Message queue** | Messages get queued when the agent is busy, never lost |
-| **Git awareness** | Sees branch, status, and diffs in real time |
+|                    |                                                        |
+| ------------------ | ------------------------------------------------------ |
+| **Live streaming** | Responses stream to all participants simultaneously    |
+| **Message queue**  | Messages get queued when the agent is busy, never lost |
+| **Git awareness**  | Sees branch, status, and diffs in real time            |
 ```
 
 Group features into 2-3 sections with short headers. Never dump 15 features in one table.
@@ -143,7 +150,8 @@ Use middle dots (`·`) for stack lists, not commas or bullets.
 
 ### 9. Author
 
-Use a visual author card to make the author section stand out. [GitShow](https://gitshow.dev) renders a live card image from any GitHub username:
+Use a visual author card to make the author section stand out. [GitShow](https://gitshow.dev)
+renders a live card image from any GitHub username:
 
 ```markdown
 ## Author
@@ -154,7 +162,8 @@ Use a visual author card to make the author section stand out. [GitShow](https:/
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/USERNAME)
 ```
 
-The GitShow card goes above the social badges. It renders as a 460x56 PNG with the author's avatar, name, and GitHub stats. Much better than a plain text "Made by" line.
+The GitShow card goes above the social badges. It renders as a 460x56 PNG with the author's avatar,
+name, and GitHub stats. Much better than a plain text "Made by" line.
 
 ### 10. License
 
@@ -166,18 +175,18 @@ The GitShow card goes above the social badges. It renders as a 460x56 PNG with t
 
 ## Anti-Patterns (Never Do These)
 
-| Pattern | Why it's bad |
-|---|---|
-| Section called "The Problem" | Boring, reads like a homework assignment |
-| `**Feature:** description` bullets | The #1 AI-detectable README pattern |
-| All paragraphs same length | Vary them. Some one line, some a paragraph |
-| References to missing assets | Broken images kill credibility instantly |
-| "seamless", "robust", "comprehensive" | Marketing words that mean nothing |
-| Opening with what the tool is | "A real-time collaborative..." is boring. Open with WHY |
-| "Other projects by @user" footer | Looks self-promotional |
-| "Happy coding!" at the end | Filler. Cut it |
-| Em dashes everywhere | AI writing tell. Use hyphens with spaces or periods |
-| `$` prefix in bash commands | Breaks copy-paste |
+| Pattern                               | Why it's bad                                            |
+| ------------------------------------- | ------------------------------------------------------- |
+| Section called "The Problem"          | Boring, reads like a homework assignment                |
+| `**Feature:** description` bullets    | The #1 AI-detectable README pattern                     |
+| All paragraphs same length            | Vary them. Some one line, some a paragraph              |
+| References to missing assets          | Broken images kill credibility instantly                |
+| "seamless", "robust", "comprehensive" | Marketing words that mean nothing                       |
+| Opening with what the tool is         | "A real-time collaborative..." is boring. Open with WHY |
+| "Other projects by @user" footer      | Looks self-promotional                                  |
+| "Happy coding!" at the end            | Filler. Cut it                                          |
+| Em dashes everywhere                  | AI writing tell. Use hyphens with spaces or periods     |
+| `$` prefix in bash commands           | Breaks copy-paste                                       |
 
 ## Formatting Rules
 
@@ -191,6 +200,7 @@ The GitShow card goes above the social badges. It renders as a 460x56 PNG with t
 ## Checklist
 
 Before finishing any README, verify:
+
 - [ ] Opening hook captures value in under 5 seconds
 - [ ] No section called "The Problem", "Introduction", or "Overview"
 - [ ] Quick Start is copy-paste ready, under 5 commands

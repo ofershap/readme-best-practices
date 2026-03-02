@@ -25,23 +25,23 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
 
 ## What's Included
 
-| Type    | Name                    | Description                                                                |
-| ------- | ----------------------- | -------------------------------------------------------------------------- |
-| Skill   | `readme-best-practices` | Full guide: BLUF headers, story sections, feature tables, author cards     |
-| Rule    | `readme-best-practices` | Always-on rule that enforces great README patterns on every edit           |
-| Command | `/create-readme`        | Create or rewrite the project README following the full best practices     |
+| Type    | Name                    | Description                                                            |
+| ------- | ----------------------- | ---------------------------------------------------------------------- |
+| Skill   | `readme-best-practices` | Full guide: BLUF headers, story sections, feature tables, author cards |
+| Rule    | `readme-best-practices` | Always-on rule that enforces great README patterns on every edit       |
+| Command | `/create-readme`        | Create or rewrite the project README following the full best practices |
 
 ## The Transformation
 
-| Before                                 | After                                                     |
-| -------------------------------------- | --------------------------------------------------------- |
-| Generic "A tool that..." opening       | BLUF punchline: bold value prop in the first 3 lines      |
-| Section called "The Problem"           | A name with personality: "Your Agent Works in a Void"     |
-| `**Feature:** description` bullets     | Feature tables, scannable at a glance                     |
-| Plain "Made by username"               | Visual author card with avatar and stats ([GitShow](https://gitshow.dev)) |
-| Quick Start with `$` prefix            | Copy-paste ready bash blocks                              |
-| All paragraphs the same length         | Varied structure: one-liners, short paragraphs, tables    |
-| Missing demo GIF link                  | Assets verified on disk before referencing                |
+| Before                             | After                                                                     |
+| ---------------------------------- | ------------------------------------------------------------------------- |
+| Generic "A tool that..." opening   | BLUF punchline: bold value prop in the first 3 lines                      |
+| Section called "The Problem"       | A name with personality: "Your Agent Works in a Void"                     |
+| `**Feature:** description` bullets | Feature tables, scannable at a glance                                     |
+| Plain "Made by username"           | Visual author card with avatar and stats ([GitShow](https://gitshow.dev)) |
+| Quick Start with `$` prefix        | Copy-paste ready bash blocks                                              |
+| All paragraphs the same length     | Varied structure: one-liners, short paragraphs, tables                    |
+| Missing demo GIF link              | Assets verified on disk before referencing                                |
 
 ## How It Works
 
@@ -52,7 +52,8 @@ The plugin embeds a complete README structure into your agent's behavior:
 3. **Story section** - named with personality, not "Introduction" or "Overview"
 4. **Feature tables** - scannable, two-column format instead of bullet lists
 5. **Copy-paste Quick Start** - zero to running in under 30 seconds
-6. **Author card** - [GitShow](https://gitshow.dev) renders a live card image from any GitHub username
+6. **Author card** - [GitShow](https://gitshow.dev) renders a live card image from any GitHub
+   username
 
 The always-on rule enforces these patterns on every README edit, so nothing slips through.
 
@@ -60,8 +61,8 @@ The always-on rule enforces these patterns on every README edit, so nothing slip
 
 - [ai-humanizer](https://github.com/ofershap/ai-humanizer) - Prevent AI-detectable patterns in all
   generated content, not just READMEs
-- [typescript-best-practices](https://github.com/ofershap/typescript-best-practices) - Modern TypeScript
-  patterns for code quality
+- [typescript-best-practices](https://github.com/ofershap/typescript-best-practices) - Modern
+  TypeScript patterns for code quality
 
 ---
 
