@@ -1,0 +1,33 @@
+{
+  "name": "readme-best-practices",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI agents write READMEs that read like API docs. This plugin teaches them to write READMEs that make people install.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "readme",
+    "documentation",
+    "open-source",
+    "best-practices",
+    "cursor-plugin",
+    "claude-code",
+    "ai-agent",
+    "marketing"
+  ],
+  "author": {
+    "name": "Ofer Shapira",
+    "url": "https://github.com/ofershap"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ofershap/readme-best-practices.git"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.0"
+  }
+}

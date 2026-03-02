@@ -1,0 +1,18 @@
+{
+  "name": "readme-best-practices",
+  "owner": {
+    "name": "Ofer Shapira",
+    "email": "ofer@shapira.dev"
+  },
+  "metadata": {
+    "description": "AI agents write READMEs that read like API docs. This plugin teaches them to write READMEs that make people install.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "readme-best-practices",
+      "source": ".",
+      "description": "AI agents write READMEs that read like API docs. This plugin teaches them to write READMEs that make people install."
+    }
+  ]
+}

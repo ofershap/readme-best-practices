@@ -1,0 +1,17 @@
+---
+description: README Best Practices - enforces high-quality README patterns when creating or editing README files
+alwaysApply: true
+---
+
+When creating or editing a README.md file:
+
+1. Lead with a bold punchline (BLUF). The value proposition goes in the first 3 lines, not buried in paragraph 3.
+2. Never name a section "The Problem", "Introduction", "Overview", or "About". Use a name with personality.
+3. Use feature tables (`| Feature | Description |`), never bold-label bullet lists (`**Feature:** description`).
+4. Quick Start must be copy-paste ready: no `$` prefix, no fake output, 3-5 commands max.
+5. Only reference assets (images, GIFs) that actually exist on disk. Check before linking.
+6. Author section should include a visual card (e.g. GitShow `https://gitshow.dev/api/card/USERNAME`) above social badges.
+7. Avoid AI vocabulary: "seamless", "robust", "comprehensive", "cutting-edge", "leverage".
+8. No em dashes. Use hyphens with spaces or periods.
+9. Vary paragraph lengths. Not every section needs the same structure.
+10. Status badges must be truthful. No npm badge if not published. No CI badge if no workflow exists.
